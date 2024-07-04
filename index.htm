@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>excel clone</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/883515ee7d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="fileOptionsContainer">
+        <div class="fileOptions">Home</div>
+        <div class="fileOptions">File</div>
+        <div class="fileOptions">Insert</div>
+        <div class="fileOptions">Layout</div>
+        <div class="fileOptions">Help</div>
+    </div>
+    <div class="editingToolsContainer">
+        <i class="fa-sharp fa-solid fa-copy fa-1x editingTools"></i>
+        <i class="fa-sharp fa-solid fa-paste editingTools fa-1x"></i>
+        <i class="fa-sharp fa-solid fa-scissors fa-1x editingTools"></i>
+        <select name="" id="fontFamilyDropDown">
+            <option value="Fantasy">Fantasy</option>
+            <option value="Trebuchet MS">Trebuchet MS</option>
+            <option value="Franklin Gothic Medium">Franklin Gothic </option>
+            <option value="Times New Roman">Times New Roman</option>
+        </select>
+        <input type="color" id="colorPicker">
+        <select name="" id="fontSizeDropDown">
+            <option value="14">14</option>
+            <option value="16">16</option>
+            <option value="18">18</option>
+            <option value="20">20</option>
+        </select>
+        <i class="fa-sharp fa-solid fa-bold fa-1x editingTools"></i>
+        <i class="fa-sharp fa-solid fa-italic fa-1x editingTools"></i>
+        <i class="fa-sharp fa-solid fa-underline fa-1x editingTools"></i>
+        <i class="fa-sharp fa-solid fa-align-left fa-1x editingTools"></i>
+        <i class="fa-sharp fa-solid fa-align-center fa-1x editingTools"></i>
+        <i class="fa-sharp fa-solid fa-align-right fa-1x editingTools"></i>
+        <div id="textColorPicker">
+            
+            <input type="color" id="textColor">
+            <i class="fa-solid fa-palette fa-1x editingTools"></i>
+        </div>
+        <div  id="bgColorPicker">
+            <input type="color" id="bgColor">
+            <i class="fa-solid fa-fill fa-1x editingTools"></i>
+        </div>
+    </div>
+    <div class="address">
+        <input type="text" readonly class="addressBar" id="addDisplay">
+        <img class="addressBar" src="./icons8-formula-fx-50.png" alt="">
+        <input type="text" class="addressBar" id="formulaDisplay">
+    </div>
+    <div class="grid">
+        <div class="emptyBox"></div>
+        <div class="collumName"></div>
+        <div class="cells">
+            <div class="rowName"></div>
+        </div>
+    </div>
+    <div class="sheetsContainer">
+        <div id="sheetsAdd">
+            <div id="addSheetIcon">
+                <i class="fa-solid fa-file-circle-plus "></i>
+            </div>
+            <div class="sheetsName">
+                <div>
+                    sheet1
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./grid.js"></script>
+<script src="./cell-properties.js"></script>
+<script src="./formula.js"></script>
+<script src="./cycleValidation.js"></script>
+
+</html>

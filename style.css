@@ -1,0 +1,265 @@
+/* Globla variables and default properties */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --black: rgb(54 54 54);
+    --white: rgb(243, 239, 239);
+    
+}
+
+/* file Options Container--> */
+
+.fileOptionsContainer {
+    height: 7vh;
+    background-color: lightpink;
+    background-color: var(--black);
+    display: flex;
+    align-items: flex-end;
+    color: var(--white);
+    border-bottom: 1px solid var(--white);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.fileOptions {
+    margin-left: 1rem;
+    margin-bottom: 0.5vw;
+    cursor: pointer;
+}
+
+
+/* Editing Tool Bar--> */
+.editingToolsContainer {
+    height: 7vh;
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid var(--white);
+}
+
+
+.editingTools {
+    margin: 0.5rem;
+    color: var(--white);
+    padding: 3px;
+    /* background-color: blue; */
+    /* color: rgb(59, 11, 11); */
+}
+
+#fontFamilyDropDown {
+    border: none;
+    outline: none;
+    padding: 0.1rem;
+    margin: 0.5rem;
+}
+
+#fontSizeDropDown {
+    border: none;
+    outline: none;
+    padding: 0.1rem;
+    margin: 0.5rem;
+}
+
+#colorPicker {
+    width: 2rem;
+    height: 1.4rem;
+    border: 2px solid white;
+    border: none;
+    outline: none;
+    margin-left: -0.4rem;
+    cursor: pointer;
+}
+#bgColorPicker{
+    /* width: 1rem; */
+    position: relative;
+}
+#bgColor{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+#textColor{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+
+}
+#textColorPicker{
+    position: relative;
+}
+
+/* Address bar --> */
+
+.address {
+    height: 7vh;
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.addressBar {
+    margin: 0.5rem;
+    /* text-align: center; */
+}
+
+#addDisplay {
+    width: 3.5rem;
+    text-align: center;
+    outline: none;
+}
+
+#formulaDisplay {
+    margin-left: 0.2rem;
+    width: 90vw;
+    outline: none;
+}
+
+.address img {
+    margin-right: 0.1rem;
+    height: 1.6rem;
+}
+
+/* Add sheet bar --> */
+.sheetsContainer {
+    height: 5vh;
+    /* background-color: lightsalmon; */
+
+}
+
+#sheetsAdd {
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 5vh;
+}
+
+.sheetsName {
+    margin-left: 0.9rem;
+    width: 95vw;
+}
+
+.sheetsName>div {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    font-weight: bold;
+    text-decoration-color: var(--white);
+    display: inline-block;
+    cursor: pointer;
+}
+
+#addSheetIcon {
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+/* Grid Area --> */
+
+.grid {
+    height: 74vh;
+    margin: 0px;
+    padding: 0px;
+    overflow: scroll;
+    position: relative;
+
+}
+.emptyBox{
+    height: 2rem;
+    width: 3rem;
+    background-color: rgb(106, 99, 99);
+    /* position: fixed; 
+    top: 133px;
+    left: 0; */
+}
+
+.collumName{
+    /* display: flex;
+    flex-direction: column; */
+    position: sticky;
+    /* bottom: 0; */
+    top: 5rem;
+    /* left: 0rem;  */
+    /* right: 0rem; */
+    
+}
+.rowName{
+    display: flex;
+    /* background-color: lightpink; */
+    /* justify-content: center; */
+    position: sticky;
+    left: 3rem;
+    top: 0;
+}
+.cells{
+    position: absolute;
+    top: 0;
+    left: 3rem;
+}
+.addCollum{
+    height: 2rem;
+    width: 3rem;
+    /* padding: 2px; */
+    background-color: var(--black);
+    color: var(--white);
+    border: 2px solid var(--white);
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    /* position: sticky; */
+    
+}
+.addRow{
+    background-color: var(--black);
+    color: var(--white);
+    border: 2px solid var(--white);
+    border-right: none;
+    height: 2rem;
+    width: 8rem;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rows{
+    /* border: 2px solid black; */
+    display: flex;
+    /* border-bottom: none; */
+    /* border-left: none; */
+    
+}
+.cell{
+    width: 8rem;
+    height: 2rem;
+    border: 2px solid var(--white);
+    background-color: var(--black);
+    color: var(--white);
+    border-right: none;
+    border-bottom: none;
+    outline: none;
+    /* text-align: center; */
+    display: flex;
+    /* justify-content: center; */
+    /* justify-content: ; */
+    align-items: center;
+    overflow: hidden;
+    
+}
